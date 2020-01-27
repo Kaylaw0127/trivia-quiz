@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link href="assets/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="assets/style.css" rel="stylesheet">
     <title>Trivia Quiz!</title>
 </head>
 
@@ -17,7 +17,6 @@
 
     <div class="container">
         <div id="question-container" class="hide">
-
             <div id="start">Begin Quiz!</div>
             <div id="quiz">
                 <div id="question-container" class="hide">
@@ -32,7 +31,19 @@
                         <button id="startBtn" class="start-btn btn">Start</button>
                         <button id="nextBtn" class="next-btn btn hide">Next</button>
                     </div>
+                </div>
+                <h1 id="time-left"></h1>
+                <div>
+                    <h1 class="hide text-center" id="timesUp">Time's Up!</h1>
+                    <h2 class="hide text-center" id="core">Score</h2>
+                    <h1 class="hide text-center" id="timeLeft">Time</h1>
+                </div>
+            </div>
+        </div>
+        <div id="progress"></div>
     </div>
+    <div id="scoreContainer" style="display: none"></div>
+
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -1,0 +1,11 @@
+.container {
+    background-color: lightgrey;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+}
+
+.btn {
+    border-style: solid !important;
+    border-color: black !important;
+} 
