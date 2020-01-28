@@ -3,9 +3,49 @@
     border-color: black;
     border-style: solid;
     text-align: center;
+    margin-top: 20%;
+    width: 800px;
+    max-width: 80%;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .btn {
     border-style: solid !important;
     border-color: black !important;
+    padding: 5px 10px;
 } 
+.btn:hover {
+  border-color: black;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+  
+  
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+ 
+  .btn.correct ::after {
+    color: black;
+    content: "Correct!" !important;
+  }
+  
+  .btn.wrong ::after {
+    color: black;
+    content: "Wrong!" !important;
+  
+  
+  .hide {
+    display: none;
+  }

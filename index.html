@@ -14,40 +14,31 @@
 </head>
 
 <body>
-
+    
     <div class="container">
         <div id="question-container" class="hide">
-            <div id="start">Begin Quiz!</div>
-            <div id="quiz">
-                <div id="question-container" class="hide">
-                    <div id="question">Question</div>
-                    <div id="answerBtn" class="btn-grid">
-                        <button class="btn">Answer A</button>
-                        <button class="btn">Answer B</button>
-                        <button class="btn">Answer C</button>
-                        <button class="btn">Answer D</button>
-                    </div>
-                    <div class="controls">
-                        <button id="startBtn" class="start-btn btn">Start</button>
-                        <button id="nextBtn" class="next-btn btn hide">Next</button>
-                    </div>
-                </div>
-                <h1 id="time-left"></h1>
-                <div>
-                    <h1 class="hide text-center" id="timesUp">Time's Up!</h1>
-                    <h2 class="hide text-center" id="core">Score</h2>
-                    <h1 class="hide text-center" id="timeLeft">Time</h1>
-                </div>
-            </div>
+          <h1 id="question">Begin Quiz!</h1>
+          <div id="answer-buttons" class="btn-grid">
+            <button class="btn" ></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+          </div>
         </div>
-        <div id="progress"></div>
-    </div>
-    <div id="scoreContainer" style="display: none"></div>
-
-
+        <div class="controls">
+          <button id="start-btn" class="start-btn btn">Start</button>
+          <br>
+          <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+        <div> 
+            <p>Time remaining until next question:</p><div id="timer-count">15</div> 
+          </div>
+      </div>
+    
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="script.js"></script>
+    <script src="questions.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
@@ -60,3 +51,4 @@
 </body>
 
 </html>
+

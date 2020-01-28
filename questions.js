@@ -1,38 +1,48 @@
-var questions = [
+    var questions = [
     {
         question : "What is the HTML tag under which one can write the JavaScript code??",
-        optionA : "<javascript>",
-        optionB : "<script>",
-        optionC : "<js>",
-        optionD : "<style>",
-        correct : "B"
-    } ,   {
+        answers: [
+        { text: "<javascript>", correct: false },
+        { text : "<script>", correct: true },
+        { text : "<js>", correct: false },
+        { text : "<style>", correct: false },
+        ]
+    } ,  
+    {
        question : "What is the correct syntax for referring to an external script called “script.js”?",
-        optionA: "<script src=”geek.js”>",  
-        optionB: "<script href=”geek.js”>",
-        optionC: "<script ref=”geek.js”>",
-        optionD: "<script name=”geek.js”>",        
-        correct : "A"
-   } ,  {
+       answers: [
+        { text: "<script src=”geek.js”>", correct: true },  
+        { text: "<script href=”geek.js”>", correct: false },
+        { text: "<script ref=”geek.js”>", correct: false },
+        { text: "<script name=”geek.js”>", correct: false },     
+       ]
+   } ,
+   {
        question : 'How do you write "Hello World" in an alert box?',
-       optionA : 'msgBox("Hello World)',
-        optionB : 'alert("Hello World")',
-        optionC : 'alertBox("Hello World")',
-        optionD : 'msg("Hello World")',
-        correct : "B"
-   } , {
+       answers: [
+       { text : 'msgBox("Hello World)', correct: false },
+       { text : 'alert("Hello World")', correct: true },
+       { text : 'alertBox("Hello World")', correct: false },
+       { text : 'msg("Hello World")', correct: false },
+       ]
+   } ,
+   {
        question : "Which operator is used to assign a value to a variable?",
-       optionA : "X",
-        optionB : ">",
-        optionC : ".",
-        optionD : "=",
-        correct : "D"
-   } , {
+       answers: [
+       { text : "X", correct: false },
+       { text : ">", correct: false },
+       { text : ".", correct: false },
+       { text : "=", correct: true },
+       ]
+   } ,
+   {
        question : "How does a FOR loop start?",
-       optionA : "for i=1 to 5",
-        optionB : "for (i=0; i<=5)",
-        optionC : "for (i=0; i<=5; i++)",
-        optionD : "for (i<=5; i++)",
-        correct : "C"
+       answers: [
+       { text : "for i=1 to 5", correct: false },
+       { text : "for (i=0; i<=5)", correct: false },
+       { text : "for (i=0; i<=5; i++)", correct: true },
+       { text : "for (i<=5; i++)", correct: false },
+       ]
    } ,
   ]
+
