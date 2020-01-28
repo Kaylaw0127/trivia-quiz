@@ -4,35 +4,36 @@ var questionContainerElement = document.getElementById('question-container')
 var nextButton = document.getElementById('next-btn')
 var answerButtonsElement = document.getElementById('answer-buttons')
 var timerCount = document.getElementById('timer-count')
-
+var scoreDiv = document.getElementById('scoreContainer')
 var shuffledQuestions, currentQuestionIndex
-var timer = 15;
+
+
+startButton.addEventListener('click', startGame)
+nextButton.addEventListener('click', () => {
+    currentQuestionIndex++
+    setNextQuestion()
+})
+
+
+function startGame() {
+  startButton.classList.add('hide')
+  timer = 60;
+  shuffledQuestions = questions.sort(() => Math.random() - .5)
+  currentQuestionIndex = 0
+  questionContainerElement.classList.remove('hide')
+  setNextQuestion()
+}
 
 function countdown() {
     timer = timer - 1
-    if (timer < 15) {
+    if (timer < 60) {
         timerCount.innerHTML = timer;
     }
     if (timer < 1) {
         window.clearInterval(update)
     }
 }
-
 update = setInterval("countdown()", 1000)
-
-startButton.addEventListener('click', startGame)
-nextButton.addEventListener('click', () => {
-  currentQuestionIndex++
-  setNextQuestion()
-})
-
-function startGame() {
-  startButton.classList.add('hide')
-  shuffledQuestions = questions.sort(() => Math.random() - .5)
-  currentQuestionIndex = 0
-  questionContainerElement.classList.remove('hide')
-  setNextQuestion()
-}
 
 function setNextQuestion() {
   resetState()
@@ -90,3 +91,5 @@ function setStatusClass(element, correct) {
     element.classList.remove('wrong')
   }
 
+
+  
